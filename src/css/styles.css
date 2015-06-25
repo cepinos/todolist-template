@@ -1,0 +1,49 @@
+/* Reset styles */
+*{
+  box-sizing: border-box;
+}
+
+
+.page{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Maven Pro', sans-serif;*/
+}
+.page__content{
+  background: green;
+}
+.page__footer{
+  width: 100%;
+}
+.page__header{
+  width: 100%;
+  position: relative;
+}
+.page__sidebar{
+  display: block;
+}
+
+.page__sidebar__trigger{
+  display: inline-block;
+  font-size: 2rem;
+  left: 1rem;
+  line-height: 1rem;
+  position: absolute;
+  top: 1rem;
+  cursor: pointer;
+}
+.page__sidebar__trigger::before{
+  content: "\2261";
+  color: #666;
+  font-weight: 800;
+}
+.page__sidebar__trigger::after{
+  top: 0.4em;
+}
+.page__sidebar__trigger::before{
+  top: -0.5em;
+}

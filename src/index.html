@@ -1,0 +1,88 @@
+<!-- TODO list Template -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta chartset="UTF-8">
+		<title>TodoList Template</title>
+
+		<!-- Setting mobile viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Set browser to edge version -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+		<!-- Template Author -->
+		<link rel="author" href="https://github.com/cepinos">
+
+		<!-- Main css styles -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400|Maven+Pro' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="page">
+		<header class="page__header">
+			<span id="page-sidebar-trigger" class="page__sidebar__trigger"></span>
+		</header>
+		<aside class="page__sidebar">
+			<!-- Todo Lists -->
+			<nav class="lists">
+				<ul class="lists__menu">
+					<li class="lists__menu__item">
+						<a href="#">Work</a>
+						<ul class="lists__menu__item__actions">
+							<li class="lists__menu__item__actions__delete">Delete</li>
+							<li class="lists__menu__item__actions__edit">Edit</li>
+						</ul>
+					</li>
+					<li class="lists__menu__item">
+						<a href="#">Personal</a>
+						<ul class="lists__menu__item__actions">
+							<li class="lists__menu__item__actions__delete">Delete</li>
+							<li class="lists__menu__item__actions__edit">Edit</li>
+						</ul>
+					</li>
+					<li class="lists__menu__item">
+						<a href="#">etc...</a>
+						<ul class="lists__menu__item__actions">
+							<li class="lists__menu__item__actions__delete">Delete</li>
+							<li class="lists__menu__item__actions__edit">Edit</li>
+						</ul>
+					</li>
+				</ul>
+				<button class="lists__create">Add</button>
+			</nav>
+			<!-- Todo Lists Calendar -->
+		</aside>
+
+		<!-- todo list main content-->
+		<main class="page__content">
+			<h1 class="page__content__title">TodoList</h1>
+			<div class="todo">
+				<form name="create" class="todo__create">
+					<input type="text" name="add" class="todo__create__input">
+					<button class="todo__create__button">Add</button>
+				</form>
+				<ul class="todo__list">
+					<li class="todo__list__item">
+						<input type="checkbox" class="todo__list__item__actions__checked">
+						<span  class="todo__list__item__text">Task</span>
+						<ul class="todo__list__item__actions">
+							<li class="todo__list__item__actions__delete">Delete</li>
+							<li class="todo__list__item__actions__edit">Edit</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="todo__counter">
+					<span class="todo__counter__text">Tasks Done</span>
+					<span class="todo__counter__done-number">0</span>
+					<span class="todo__counter__text">Total Tasks</span>
+					<span class="todo__counter__total-number">1</span>
+				</div>
+			</div>
+		</main>
+		<footer class="page__footer">
+			copyright @ cesar pino - 2015
+		</footer>
+	</body>
+</html>

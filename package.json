@@ -1,0 +1,28 @@
+{
+  "name": "todolist-template",
+  "version": "1.0.0",
+  "description": "Todo list Template following the best practices, for html and css, it is been implemented using BEM",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cepinos/todolist-template.git"
+  },
+  "keywords": [
+    "to-do",
+    "list",
+    "template"
+  ],
+  "author": "@cepinos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cepinos/todolist-template/issues"
+  },
+  "homepage": "https://github.com/cepinos/todolist-template#readme",
+  "devDependencies": {
+    "browser-sync": "^2.7.12",
+    "gulp": "^3.9.0"
+  }
+}
