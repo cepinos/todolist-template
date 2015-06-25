@@ -22,9 +22,8 @@
 	</head>
 	<body class="page">
 		<header class="page__header">
-			<span id="page-sidebar-trigger" class="page__sidebar__trigger"></span>
 		</header>
-		<aside class="page__sidebar">
+		<aside id="page-sidebar" class="page__sidebar">
 			<!-- Todo Lists -->
 			<nav class="lists">
 				<ul class="lists__menu">
@@ -56,7 +55,8 @@
 		</aside>
 
 		<!-- todo list main content-->
-		<main class="page__content">
+		<main id="page-content" class="page__content">
+			<span id="page-sidebar-trigger" class="page__sidebar__trigger"></span>
 			<h1 class="page__content__title">TodoList</h1>
 			<div class="todo">
 				<form name="create" class="todo__create">
@@ -84,5 +84,9 @@
 		<footer class="page__footer">
 			copyright @ cesar pino - 2015
 		</footer>
+
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/scripts.js"></script>
 	</body>
 </html>

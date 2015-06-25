@@ -6,8 +6,8 @@
 
 .page{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
@@ -15,9 +15,12 @@
 }
 .page__content{
   background: green;
+  position: relative;
+  transform: translate3d(260px, 0, 0);
 }
 .page__footer{
   width: 100%;
+  flex: none;
 }
 .page__header{
   width: 100%;
@@ -25,6 +28,7 @@
 }
 .page__sidebar{
   display: block;
+  width: 260px;
 }
 
 .page__sidebar__trigger{
